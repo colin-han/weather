@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="wind.css">
+    <script src="lodash.js"></script>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="panel-item background"></div>
+        <div id="wind-container" class="panel-item">
+            <script id="leaf-template" type="template/lodash">
+                <div class="leaf-box" style="top: <%= top %>px; left: <%= left %>px; width: <%= width %>px; height: <%= height %>px;animation-duration: <%= duration %>s" onanimationend="wind.animationEnd(event)">
+                    <div class="leaf <%= leafClass %>"></div>
+                </div>
+            </script>
+            </canvas>
+        </div>
+        <script src="common.js"></script>
+        <script src="wind.js"></script>
+        <script>
+            wind.init({
+                containerId: 'wind-container',
+                templateId: 'leaf-template',
+                speed: [0.6, 1.5], //速度范围
+                size_range: [0.3, 1],//大小半径范围
+                leafClasses: [
+                    'leaf-1',
+                    'leaf-2',
+                    'leaf-3',
+                    'leaf-4',
+                    'leaf-5'
+                ],
+                maxNum: 50,
+                numLevel: 3,
+            });
+        </script>
+</body>
+
+</html>

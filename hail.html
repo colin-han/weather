@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" >
+    <link rel="stylesheet" href="lightning.css" >
+</head>
+<body>
+    <div class="panel">
+        <div class="panel-item background"></div>
+        <canvas id="canvas" class="panel-item"></canvas>
+    </div>
+    <script src="common.js"></script>
+    <script src="canvasDrop.js"></script>
+    <script>
+        init({
+            id: 'canvas',
+            type: "snow",  // drop类型，有rain or snow
+            speed : [1.4,3.5], //速度范围
+            size_range: [2.5,3.5],//大小半径范围
+            hasBounce: true, //是否有反弹效果or false,
+            wind_direction: -100, //角度
+            hasGravity: true, //是否有重力考虑
+            maxNum: 100,
+            numLevel: 2,
+        });
+        update();
+    </script>
+</body>
+</html>

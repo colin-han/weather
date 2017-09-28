@@ -1,0 +1,150 @@
+@keyframes leaf-path {
+  0% {
+    transform: translate(10.05%, 98.85%);
+    opacity: 0;
+  }
+  3% {
+    transform: translate(15.13%, 97.74%);
+  }
+  6% {
+    transform: translate(20.00%, 96.17%);
+  }
+  9% {
+    transform: translate(24.92%, 93.86%);
+  }
+  12% {
+    transform: translate(29.60%, 90.84%);
+  }
+  15% {
+    transform: translate(34.24%, 87.72%);
+  }
+  18% {
+    transform: translate(39.12%, 83.98%);
+  }
+  21% {
+    transform: translate(44.12%, 80.12%);
+    opacity: 1;
+  }
+  24% {
+    transform: translate(46.68%, 76.99%);
+  }
+  27% {
+    transform: translate(49.54%, 73.18%);
+  }
+  30% {
+    transform: translate(52.57%, 67.72%);
+  }
+  33% {
+    transform: translate(55.36%, 61.83%);
+  }
+  36% {
+    transform: translate(57.82%, 54.72%);
+  }
+  39% {
+    transform: translate(59.74%, 46.60%);
+  }
+  42% {
+    transform: translate(61.38%, 34.64%);
+  }
+  45% {
+    transform: translate(61.81%, 22.25%);
+  }
+  48% {
+    transform: translate(60.49%, 10.79%);
+  }
+  51% {
+    transform: translate(57.28%, 2.98%);
+  }
+  54% {
+    transform: translate(53.42%, 0%);
+  }
+  57% {
+    transform: translate(48.81%, 2.48%);
+  }
+  60% {
+    transform: translate(45.01%, 8.86%);
+  }
+  63% {
+    transform: translate(42.16%, 19.73%);
+  }
+  66% {
+    transform: translate(40.46%, 34.09%);
+  }
+  69% {
+    transform: translate(40.58%, 50.54%);
+  }
+  72% {
+    transform: translate(43.20%, 65.56%);
+  }
+  75% {
+    transform: translate(47.29%, 75.38%);
+  }
+  78% {
+    transform: translate(52.48%, 81.30%);
+  }
+  81% {
+    transform: translate(57.75%, 84.80%);
+    opacity: 1;
+  }
+  84% {
+    transform: translate(63.14%, 86.25%);
+  }
+  87% {
+    transform: translate(69.38%, 86.21%);
+  }
+  90% {
+    transform: translate(75.96%, 84.20%);
+  }
+  93% {
+    transform: translate(83.61%, 79.86%);
+  }
+  96% {
+    transform: translate(91.45%, 74.15%);
+  }
+  100% {
+    transform: translate(100%, 65.94%);
+    opacity: 0;
+  }
+}
+@keyframes leaf-rotate {
+  0% {transform: rotate(0deg) skew(0deg, 0deg) scale(1, 1);}
+  40% {transform: rotate(90deg) skew(10deg, 0deg);}
+  70% {transform: rotate(360deg) skew(5deg, 0deg);}
+  80% {transform: rotate(400deg) skew(10deg, 0deg);}
+  100% {transform: rotate(720deg) skew(0deg, 0deg) scale(.2, .2);}
+}
+
+.leaf-box {
+  position: absolute;
+  animation: leaf-path 2s linear 0s;
+}
+.leaf {
+  background-image: url(leafs.png);
+  background-position: -69px -12px;
+  animation: leaf-rotate 2s linear 0s infinite;
+}
+.leaf-1 {
+  width: 34px;
+  height: 61px;
+  background-position: -69px -12px;
+}
+.leaf-2 {
+  width: 26px;
+  height: 74px;
+  background-position: -113px 0px;
+}
+.leaf-3 {
+  width: 62px;
+  height: 78px;
+  background-position: -102px -190px;
+}
+.leaf-4 {
+  width: 38px;
+  height: 75px;
+  background-position: -252px -96px;
+}
+.leaf-5 {
+  width: 44px;
+  height: 85px;
+  background-position: -194px -4px;
+}

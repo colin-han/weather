@@ -1,0 +1,46 @@
+@keyframes lightning {
+    from {
+        opacity: 0
+    }
+    80% {
+        opacity: 0
+    }
+    82% {
+        opacity: .4
+    }
+    83% {
+        opacity: .3
+    }
+    85% {
+        opacity: .6
+    }
+    to {
+        opacity: 0
+    }
+}
+.lightning {
+    position: absolute;
+    opacity: 0;
+    right: auto;
+    bottom: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: 6s lightning 0s infinite;
+}
+
+.lightning-1 {
+    top: -30px;
+    left: 720px;
+    width: 300px;
+    height: 300px;
+    background-image: url(lightning.png);
+    animation-delay: 2s;
+    transform: rotateZ(24deg);
+}
+.lightning-2 {
+    top: -30px;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+    background-image: url(lightning2.png);
+}

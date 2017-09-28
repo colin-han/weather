@@ -1,0 +1,29 @@
+body {
+    background-color: #131404;
+    color: white;
+}
+a:link {
+    color: #E8DCFC;
+}
+a:visited {
+    color: #E3FFBF;
+}
+.panel {
+    position: relative;
+    width: 1280px;
+    height: 560px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.panel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.background {
+    background-image: url(bk2.jpeg);
+}
